@@ -1,24 +1,13 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {TextoItem} from "./components/texto";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="p-10">
+      <TextoItem />
+      <a 
+      className="block shadow bg-violet-600 text-white text-center p-4 mt-5 rounded-xl hover:bg-violet-500"
+      href="#">Comentar
+      </a>
     </div>
   );
 }
